@@ -22,7 +22,22 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/orders.html"
     });
 
+    $routeProvider.when("/refresh", {
+        controller: "refreshController",
+        templateUrl: "/app/views/refresh.html"
+    });
+
+    $routeProvider.when("/tokens", {
+        controller: "tokensManagerController",
+        templateUrl: "/app/views/tokens.html"
+    });
+
     $routeProvider.otherwise({ redirectTo: "/home" });
+});
+
+app.constant('ngAuthSettings', {
+    apiServiceBaseUri: 'http://localhost:52840/',
+    clientId: 'LearnWebApiAuth'
 });
 
 app.config(function ($httpProvider) {
