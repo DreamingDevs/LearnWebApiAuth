@@ -66,6 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\controllers\refreshController.js" />
+    <Content Include="app\controllers\tokensManagerController.js" />
+    <Content Include="app\services\tokensManagerService.js" />
+    <Content Include="app\views\refresh.html" />
+    <Content Include="app\views\tokens.html" />
     <Content Include="packages.config" />
     <Content Include="content\fonts\fontawesome-webfont.eot" />
     <Content Include="content\fonts\fontawesome-webfont.ttf" />
